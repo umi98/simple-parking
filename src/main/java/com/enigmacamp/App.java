@@ -92,11 +92,10 @@ public class App {
                 parking.put(String.valueOf(num), currentVehicle);
                 System.out.println("Allocated to slot no." + (num+1));
                 break;
-            } else {
-                System.out.println("Parking full");
             }
             num++;
         }
+        if (num >= parking.size()) System.out.println("Parking full");
     }
 
     public void status() {
